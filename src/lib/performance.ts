@@ -2,28 +2,28 @@
 export const measurePerformance = () => {
   // Web Vitals measurement
   if (typeof window !== 'undefined') {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS((metric) => {
+    import('web-vitals').then(({ onCLS, onINP, onFCP, onLCP, onTTFB }) => {
+      onCLS((metric) => {
         console.log('CLS:', metric);
         // Send to analytics service
       });
       
-      getFID((metric) => {
-        console.log('FID:', metric);
+      onINP((metric) => {
+        console.log('INP:', metric);
         // Send to analytics service
       });
       
-      getFCP((metric) => {
+      onFCP((metric) => {
         console.log('FCP:', metric);
         // Send to analytics service
       });
       
-      getLCP((metric) => {
+      onLCP((metric) => {
         console.log('LCP:', metric);
         // Send to analytics service
       });
       
-      getTTFB((metric) => {
+      onTTFB((metric) => {
         console.log('TTFB:', metric);
         // Send to analytics service
       });
