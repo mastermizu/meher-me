@@ -1,0 +1,22 @@
+-- Add more diverse marketing activities for the starlit animation
+INSERT INTO activities (title, description, metric) VALUES
+  ('SEO Optimization', 'Improved search rankings', '+156% organic traffic'),
+  ('A/B Testing', 'Email subject line test', '+23% open rate'),
+  ('Webinar Series', 'Product demo webinars', '2.5K attendees'),
+  ('Influencer Collab', 'Partnership campaign', '500K reach'),
+  ('Customer Survey', 'NPS feedback collection', '8.9/10 score'),
+  ('Video Production', 'Product showcase video', '1M+ views'),
+  ('PPC Campaign', 'Google Ads optimization', '-34% CPC'),
+  ('Lead Nurturing', 'Automated email sequences', '+67% conversion'),
+  ('Content Strategy', 'Blog content calendar', '300% traffic growth'),
+  ('Analytics Setup', 'GA4 implementation', '100% data accuracy'),
+  ('Conversion Rate', 'Landing page optimization', '+89% conversions'),
+  ('Retargeting', 'Facebook pixel campaigns', '+145% ROAS'),
+  ('Partnership Deal', 'Strategic alliance', '$5M revenue potential'),
+  ('User Testing', 'UX research sessions', '15 insights gathered'),
+  ('Mobile Campaign', 'App store optimization', '+234% downloads'),
+  ('Event Marketing', 'Trade show presence', '500 leads generated'),
+  ('CRM Integration', 'Salesforce automation', '-50% manual work'),
+  ('Brand Awareness', 'PR campaign launch', '50+ media mentions'),
+  ('Customer Success', 'Onboarding program', '95% satisfaction'),
+  ('Growth Hacking', 'Viral referral program', '10x user growth');
