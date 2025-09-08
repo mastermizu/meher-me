@@ -57,9 +57,7 @@ const Portfolio = () => {
                   variant={activeFilter === filter ? "default" : "outline"} 
                   size="sm" 
                   onClick={() => setActiveFilter(filter)} 
-                  className="transition-all duration-300 text-dashboard-label font-semibold text-slate-500"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  className="transition-all duration-300 text-dashboard-label font-semibold text-slate-500 hover:scale-105 active:scale-95"
                 >
                 {filter}
                 </Button>
@@ -86,10 +84,8 @@ const Portfolio = () => {
                 layout
               >
                 <Card 
-                  className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden"
+                  className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-1 active:scale-98 overflow-hidden"
                   onClick={() => setSelectedCampaign(campaign)}
-                  whileHover={{ y: -5 }}
-                  whileTap={{ scale: 0.98 }}
                 >
                 <CardHeader className="pb-3">
                   <div className="flex items-center justify-between mb-2">

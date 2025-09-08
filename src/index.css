@@ -302,6 +302,18 @@
   .gap-hubspot-lg { @apply gap-8; }            /* 32px */
   .gap-hubspot-xl { @apply gap-12; }           /* 48px */
   
+  /* Margin Utilities */
+  .mb-hubspot-xs { @apply mb-2; }            /* 8px */
+  .mb-hubspot-sm { @apply mb-4; }            /* 16px */
+  .mb-hubspot-md { @apply mb-6; }            /* 24px */
+  .mb-hubspot-lg { @apply mb-8; }            /* 32px */
+  .mb-hubspot-xl { @apply mb-12; }           /* 48px */
+  
+  /* Glow effects */
+  .glow-effect {
+    box-shadow: 0 0 20px hsl(var(--hubspot-orange) / 0.3);
+  }
+  
   /* Typography Scale - Dashboard Focused */
   .text-hubspot-hero {
     @apply font-inter text-4xl lg:text-5xl xl:text-6xl font-bold text-professional-navy;
