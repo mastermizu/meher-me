@@ -10,7 +10,7 @@ const SkillsSection = () => {
     { name: "Growth Marketing", proficiency: 92, campaigns: "89 campaigns" },
     { name: "ABM Strategy", proficiency: 94, campaigns: "45 campaigns" },
     { name: "Email Marketing", proficiency: 88, campaigns: "234 campaigns" },
-    { name: "Campaign Management", proficiency: 90, campaigns: "156 campaigns" },
+    { name: "360° Campaigns", proficiency: 90, campaigns: "156 campaigns" },
     { name: "Lifecycle Marketing", proficiency: 85, campaigns: "178 campaigns" }
   ];
 

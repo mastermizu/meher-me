@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
@@ -170,8 +170,9 @@ const Header = () => {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="w-full border-hubspot-orange text-hubspot-orange hover:bg-hubspot-orange hover:text-white rounded-xl mt-4"
+                    className="w-full border-2 border-hubspot-orange text-hubspot-orange hover:bg-hubspot-orange hover:text-white rounded-xl mt-4 font-bold text-lg py-3 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   >
+                    <Target className="mr-2 h-5 w-5" />
                     Let's Talk
                   </Button>
                 </a>

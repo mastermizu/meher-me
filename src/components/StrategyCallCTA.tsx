@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Calendar, Clock, FileText } from "lucide-react";
+import { Calendar, Clock, FileText, Target } from "lucide-react";
 const StrategyCallCTA = () => {
   useEffect(() => {
     // Load Calendly booking embed script
@@ -45,16 +45,16 @@ const StrategyCallCTA = () => {
         {/* CTA Section */}
         <div className="text-center mb-hubspot-lg">
           <h2 className="text-hubspot-h2 font-bold text-professional-navy mb-hubspot-md">
-            Ready to Transform Your Marketing?
+            Get Results Like These—Claim Your Free Strategy Session
           </h2>
           <p className="text-hubspot-base text-professional-navy mb-hubspot-lg max-w-xl mx-auto">
-            Let's discuss your marketing challenges and create a customized strategy 
-            that delivers measurable results for your business.
+            No obligation. Actionable recommendations, or your time back.
           </p>
           <Dialog>
             <DialogTrigger asChild>
-              <Button size="default" className="bg-hubspot-orange hover:bg-hubspot-orange/90 text-white text-lg">
-                Book a Strategy Call
+              <Button size="lg" className="bg-gradient-to-r from-hubspot-orange to-hubspot-orange/90 hover:from-hubspot-orange/90 hover:to-hubspot-orange text-white text-xl font-bold px-8 py-4 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                <Target className="mr-2 h-5 w-5" />
+                Book Your Growth Call
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-4xl">

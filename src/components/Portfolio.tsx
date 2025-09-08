@@ -20,7 +20,7 @@ const Portfolio = () => {
   } = usePortfolio();
 
   return (
-    <section id="portfolio" className="py-hubspot-xl bg-gradient-to-br from-clean-white via-light-gray to-clean-white relative">
+    <section id="portfolio" className="section-spacing bg-pattern-neutral relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full" style={{

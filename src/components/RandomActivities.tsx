@@ -19,14 +19,10 @@ interface StarActivity {
 }
 
 const fallbackActivities: Activity[] = [
-  { id: 'f1', title: 'Campaign Launched', description: null, metric: 'Live' },
+  { id: 'f1', title: 'MQLs This Month', description: null, metric: '100+' },
   { id: 'f2', title: 'Website Sessions', description: null, metric: '5k+' },
-  { id: 'f3', title: 'MQLs This Month', description: null, metric: '100+' },
-  { id: 'f4', title: 'Email CTR', description: null, metric: '~3%' },
-  { id: 'f5', title: 'Content Published', description: null, metric: 'New' },
-  { id: 'f6', title: 'Demo Requests', description: null, metric: 'Up' },
-  { id: 'f7', title: 'NPS', description: null, metric: 'High' },
-  { id: 'f8', title: 'Engagement Rate', description: null, metric: '↑' }
+  { id: 'f3', title: 'Pipeline Value', description: null, metric: '$2.4M' },
+  { id: 'f4', title: 'Conversion Rate', description: null, metric: '2.88%' }
 ];
 
 const RandomActivities = () => {
@@ -64,29 +60,29 @@ const RandomActivities = () => {
   // Create scattered positions around the headshot card (word cloud style)
   const generatePosition = () => {
     const positions = [
-      // Left side - closer to headshot card
-      { minX: 0, maxX: 15, minY: 0, maxY: 100 },
+      // Left side - very minimal area
+      { minX: 0, maxX: 3, minY: 0, maxY: 100 },
       
-      // Right side - closer to headshot card
+      // Right side - expanded area for more right positioning
       { minX: 85, maxX: 100, minY: 0, maxY: 100 },
       
-      // Top left corner - avoid center
-      { minX: 0, maxX: 20, minY: 0, maxY: 15 },
+      // Top left corner - very minimal area
+      { minX: 0, maxX: 8, minY: 0, maxY: 20 },
       
-      // Top right corner - avoid center
-      { minX: 80, maxX: 100, minY: 0, maxY: 15 },
+      // Top right corner - expanded area
+      { minX: 80, maxX: 100, minY: 0, maxY: 20 },
       
-      // Bottom left corner - avoid center
-      { minX: 0, maxX: 20, minY: 85, maxY: 100 },
+      // Bottom left corner - very minimal area
+      { minX: 0, maxX: 8, minY: 80, maxY: 100 },
       
-      // Bottom right corner - avoid center
-      { minX: 80, maxX: 100, minY: 85, maxY: 100 },
+      // Bottom right corner - expanded area
+      { minX: 80, maxX: 100, minY: 80, maxY: 100 },
 
-      // Mid-left zone - closer to headshot
-      { minX: 0, maxX: 18, minY: 15, maxY: 85 },
+      // Mid-left zone - very minimal area
+      { minX: 0, maxX: 3, minY: 20, maxY: 80 },
 
-      // Mid-right zone - closer to headshot
-      { minX: 82, maxX: 100, minY: 15, maxY: 85 },
+      // Mid-right zone - expanded area
+      { minX: 85, maxX: 100, minY: 20, maxY: 80 },
     ];
     
     const zone = positions[Math.floor(Math.random() * positions.length)];
@@ -146,8 +142,8 @@ const RandomActivities = () => {
         // Remove completely faded stars
         const filtered = updated.filter(star => star.opacity > 0);
         
-        // Add new stars more frequently (maintain 12-20 stars)
-        if (filtered.length < 20 && Math.random() < 0.7) {
+        // Add new stars less frequently (maintain 4-8 stars for cleaner look)
+        if (filtered.length < 8 && Math.random() < 0.3) {
           const newStar = createStar();
           if (newStar) {
             filtered.push(newStar);
@@ -167,13 +163,13 @@ const RandomActivities = () => {
 
     const interval = setInterval(animationLoop, 40); // Faster animation loop for more responsive activities
     
-    // Initial burst of more stars
+    // Initial burst of fewer stars for cleaner look
     setTimeout(() => {
       const initialStars = [];
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 4; i++) {
         const star = createStar();
         if (star) {
-          star.opacity = Math.random() * 0.5;
+          star.opacity = Math.random() * 0.3 + 0.2;
           initialStars.push(star);
         }
       }
@@ -184,7 +180,7 @@ const RandomActivities = () => {
   }, [allActivities]);
 
   return (
-    <div className="absolute inset-0 block pointer-events-none z-40">
+    <div className="absolute inset-0 hidden md:block pointer-events-none z-40">
       {stars.map((star) => (
         <div
           key={star.id}
@@ -196,9 +192,9 @@ const RandomActivities = () => {
             opacity: star.opacity,
           }}
         >
-          <div className="bg-gradient-to-r from-hubspot-orange/40 to-growth-teal/40 backdrop-blur-lg border border-white/50 px-4 py-2 rounded-full text-xs font-medium shadow-2xl whitespace-nowrap">
-            <span className="text-hubspot-orange font-bold">{star.activity.metric}</span>
-            <span className="ml-1 text-professional-navy font-bold" style={{ color: '#1a365d' }}>{star.activity.title}</span>
+          <div className="bg-gradient-to-r from-hubspot-orange/20 to-growth-teal/20 backdrop-blur-md border border-white/30 px-3 py-1.5 rounded-full text-xs font-medium shadow-lg whitespace-nowrap">
+            <span className="text-hubspot-orange font-semibold">{star.activity.metric}</span>
+            <span className="ml-1 text-professional-navy font-medium" style={{ color: '#1a365d' }}>{star.activity.title}</span>
           </div>
         </div>
       ))}

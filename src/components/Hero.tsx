@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowDown, Linkedin, Twitter, Instagram, TrendingUp, Target, CircleDot, Bot, Zap, Download } from "lucide-react";
+import { ArrowDown, Linkedin, Twitter, Instagram, TrendingUp, Target, CircleDot, Bot, Zap, Download, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 import heroImage from "@/assets/meher-hero.jpg";
 import meherPortrait from "@/assets/meher-portrait.jpeg";
@@ -8,7 +8,7 @@ import RandomActivities from "./RandomActivities";
 import ParticleBackground from "./ParticleBackground";
 import { Button } from "@/components/ui/button";
 const Hero = () => {
-  return <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative overflow-hidden pt-24">
+  return <section className="min-h-screen flex items-center justify-center bg-pattern-dark section-spacing-lg relative overflow-hidden pt-24">
       {/* Particle Background */}
       <ParticleBackground />
       
@@ -124,7 +124,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <motion.h1 
-                className="text-hubspot-hero mb-hubspot-sm"
+                className="text-hero mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -155,40 +155,34 @@ const Hero = () => {
                 > Specialist</motion.span>
               </motion.h1>
               <motion.p 
-                className="text-hubspot-body flex items-center justify-center gap-2"
-                style={{ color: '#ffffff' }}
+                className="text-body-large text-center text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.4 }}
               >
-                <motion.div
-                  initial={{ rotate: 0 }}
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 1, delay: 1.5 }}
-                >
-                <Bot className="w-5 h-5 text-primary" />
-                </motion.div>
-                AI-powered marketing automation expert driving qualified leads and pipeline acceleration
+                Data-Driven Growth for Businesses Ready to Win
               </motion.p>
             </motion.div>
 
-            {/* Key Metrics */}
+            {/* Key Metrics - Top 3 Most Impactful */}
             <motion.div 
-              className="grid grid-cols-1 md:grid-cols-2 gap-hubspot-sm mb-hubspot-md max-w-2xl mx-auto"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-hubspot-xl max-w-4xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}
             >
+              {/* Leads Generated - Most Important */}
               <motion.div
                 initial={{ opacity: 0, x: -30, scale: 0.9 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.8 }}
                 whileHover={{ scale: 1.05, y: -5 }}
+                className="relative"
               >
-                <Card className="hubspot-card bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
-                <CardContent className="p-hubspot-md pt-hubspot-lg text-center">
+                <Card className="hubspot-card bg-gradient-to-br from-hubspot-orange/20 to-hubspot-orange/10 backdrop-blur-xl border border-hubspot-orange/30 shadow-2xl min-w-[200px]">
+                  <CardContent className="p-6 text-center">
                     <motion.div 
-                      className="flex items-center justify-center gap-2 mb-2"
+                      className="flex items-center justify-center gap-2 mb-3"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5, delay: 2.0 }}
@@ -197,13 +191,14 @@ const Hero = () => {
                         initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
                         transition={{ duration: 0.8, delay: 2.2 }}
+                        className="p-2 bg-hubspot-orange/20 rounded-full"
                       >
                     <Target className="h-6 w-6 text-hubspot-orange" />
                       </motion.div>
-                      <span className="text-base font-semibold text-professional-navy">Leads Generated</span>
+                      <span className="text-sm font-semibold text-professional-navy uppercase tracking-wide">Leads Generated</span>
                     </motion.div>
                     <motion.div 
-                      className="text-3xl font-bold text-professional-navy"
+                      className="text-4xl font-bold text-professional-navy mb-2"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.5, delay: 2.4, type: "spring", stiffness: 200 }}
@@ -211,28 +206,30 @@ const Hero = () => {
                       85K+
                     </motion.div>
                     <motion.div 
-                      className="flex items-center justify-center gap-1 text-sm text-green-400"
+                      className="flex items-center justify-center gap-1 text-sm text-hubspot-orange font-medium"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 2.6 }}
                     >
                     <Zap className="w-3 h-3" />
-                    38%+ via Automation
+                      38% via Automation
                     </motion.div>
                 </CardContent>
               </Card>
               </motion.div>
 
+              {/* Pipeline Value - Second Most Important */}
               <motion.div
-                initial={{ opacity: 0, x: 30, scale: 0.9 }}
+                initial={{ opacity: 0, x: 0, scale: 0.9 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.6, delay: 2.0 }}
                 whileHover={{ scale: 1.05, y: -5 }}
+                className="relative"
               >
-                <Card className="hubspot-card bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
-                <CardContent className="p-hubspot-md pt-hubspot-lg text-center">
+                <Card className="hubspot-card bg-gradient-to-br from-growth-teal/20 to-growth-teal/10 backdrop-blur-xl border border-growth-teal/30 shadow-2xl min-w-[200px]">
+                  <CardContent className="p-6 text-center">
                     <motion.div 
-                      className="flex items-center justify-center gap-2 mb-2"
+                      className="flex items-center justify-center gap-2 mb-3"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5, delay: 2.2 }}
@@ -241,13 +238,14 @@ const Hero = () => {
                         initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
                         transition={{ duration: 0.8, delay: 2.4 }}
+                        className="p-2 bg-growth-teal/20 rounded-full"
                       >
                     <TrendingUp className="h-6 w-6 text-growth-teal" />
                       </motion.div>
-                      <span className="text-base font-semibold text-professional-navy">Pipeline Value</span>
+                      <span className="text-sm font-semibold text-professional-navy uppercase tracking-wide">Pipeline Value</span>
                     </motion.div>
                     <motion.div 
-                      className="text-3xl font-bold text-professional-navy"
+                      className="text-4xl font-bold text-professional-navy mb-2"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.5, delay: 2.6, type: "spring", stiffness: 200 }}
@@ -255,13 +253,60 @@ const Hero = () => {
                       $42.4M
                     </motion.div>
                     <motion.div 
-                      className="flex items-center justify-center gap-1 text-sm text-green-400"
+                      className="flex items-center justify-center gap-1 text-sm text-growth-teal font-medium"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 2.8 }}
                     >
                     <Bot className="w-3 h-3" />
-                    32% AI-Driven Pipeline
+                      32% AI-Driven
+                    </motion.div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Conversion Rate - Third Most Important */}
+              <motion.div
+                initial={{ opacity: 0, x: 30, scale: 0.9 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ duration: 0.6, delay: 2.2 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="relative"
+              >
+                <Card className="hubspot-card bg-gradient-to-br from-hubspot-blue/20 to-hubspot-blue/10 backdrop-blur-xl border border-hubspot-blue/30 shadow-2xl min-w-[200px]">
+                  <CardContent className="p-6 text-center">
+                    <motion.div 
+                      className="flex items-center justify-center gap-2 mb-3"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 2.4 }}
+                    >
+                      <motion.div
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: 360 }}
+                        transition={{ duration: 0.8, delay: 2.6 }}
+                        className="p-2 bg-hubspot-blue/20 rounded-full"
+                      >
+                        <BarChart3 className="h-6 w-6 text-hubspot-blue" />
+                      </motion.div>
+                      <span className="text-sm font-semibold text-professional-navy uppercase tracking-wide">Conversion Rate</span>
+                    </motion.div>
+                    <motion.div 
+                      className="text-4xl font-bold text-professional-navy mb-2"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.5, delay: 2.8, type: "spring", stiffness: 200 }}
+                    >
+                      2.88%
+                    </motion.div>
+                    <motion.div 
+                      className="flex items-center justify-center gap-1 text-sm text-hubspot-blue font-medium"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 3.0 }}
+                    >
+                      <TrendingUp className="w-3 h-3" />
+                      +45% YoY
                     </motion.div>
                 </CardContent>
               </Card>

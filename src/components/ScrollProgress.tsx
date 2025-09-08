@@ -18,12 +18,19 @@ const ScrollProgress: React.FC = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-hubspot-orange via-purple-500 to-blue-500 z-50 origin-left"
-      style={{ scaleX: scrollProgress / 100 }}
+      className="fixed top-0 left-0 right-0 h-1 z-50 origin-left"
       initial={{ scaleX: 0 }}
       animate={{ scaleX: scrollProgress / 100 }}
       transition={{ duration: 0.1, ease: 'easeOut' }}
-    />
+    >
+      <div className="h-full bg-gradient-to-r from-hubspot-orange via-growth-teal to-hubspot-blue relative overflow-hidden">
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+          animate={{ x: ['-100%', '100%'] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+        />
+      </div>
+    </motion.div>
   );
 };
 

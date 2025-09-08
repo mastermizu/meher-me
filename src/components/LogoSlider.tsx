@@ -205,10 +205,10 @@ const LogoSlider = () => {
       <div className="container mx-auto px-6 mb-8">
         <div className="text-center">
           <h3 className="text-hubspot-h3 text-professional-navy mb-2 text-2xl font-medium">
-            Trusted Tools & Platforms
+            Expertise Across 180+ Leading Platforms
           </h3>
           <p className="text-hubspot-small text-blue-gray">
-            Expertise across 188+ marketing automation and growth platforms
+            Empowering your marketing success with industry-leading tools
           </p>
         </div>
       </div>

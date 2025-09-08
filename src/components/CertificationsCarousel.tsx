@@ -108,43 +108,43 @@ const CertificationsCarousel = () => {
   return (
     <div className="space-y-4">
       <div className="text-center">
-        <h3 className="text-hubspot-h2 mb-2 flex items-center justify-center gap-2 text-professional-navy">
-          <Award className="w-5 h-5 text-hubspot-orange" />
+        <h3 className="text-h2 mb-2 flex items-center justify-center gap-2 text-professional-navy">
+          <Award className="w-7 h-7 text-hubspot-orange" />
           Professional Certifications
         </h3>
-        <p className="text-hubspot-small text-blue-gray">
+        <p className="text-body-small text-blue-gray">
           Industry-recognized credentials and expertise validation
         </p>
       </div>
       
       {/* Certification Carousel with Arrow Navigation */}
       <div className="relative">
-        {/* Left Arrow */}
+        {/* Left Arrow - Hidden on mobile */}
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border-gray-200 shadow-lg hover:bg-white hover:shadow-xl"
+          className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border-gray-200 shadow-lg hover:bg-white hover:shadow-xl"
           onClick={() => scroll('left')}
         >
           <ChevronLeft className="h-4 w-4 text-[#0A66C2]" />
         </Button>
         
-        {/* Right Arrow */}
+        {/* Right Arrow - Hidden on mobile */}
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border-gray-200 shadow-lg hover:bg-white hover:shadow-xl"
+          className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm border-gray-200 shadow-lg hover:bg-white hover:shadow-xl"
           onClick={() => scroll('right')}
         >
           <ChevronRight className="h-4 w-4 text-[#0A66C2]" />
         </Button>
 
         {/* Viewport Container - Responsive width for modern cards */}
-        <div className="mx-auto px-12 py-4" style={{ width: '100%', maxWidth: '1200px' }}>
+        <div className="mx-auto px-4 md:px-12 py-4" style={{ width: '100%', maxWidth: '1200px' }}>
           <div className="overflow-hidden">
             <div 
               ref={scrollContainerRef}
-              className="flex gap-4 overflow-x-auto pb-2"
+              className="flex gap-3 md:gap-4 overflow-x-auto pb-2 scrollbar-hide"
               style={{ 
                 scrollbarWidth: 'none', 
                 msOverflowStyle: 'none'
@@ -153,10 +153,10 @@ const CertificationsCarousel = () => {
               {certifications.map((cert, index) => (
                 <div 
                   key={`${cert.name}-${index}`}
-                  className="flex-shrink-0 group cursor-pointer w-72"
+                  className="flex-shrink-0 group cursor-pointer w-64 sm:w-72"
                 >
                   {/* Clean, professional certification card with proper sizing */}
-                  <div className="hubspot-card hubspot-card-hover h-44 p-4 bg-clean-white border-l-4 border-l-hubspot-orange group-hover:border-l-growth-teal transition-all duration-300 relative overflow-hidden">
+                  <div className="hubspot-card hubspot-card-hover h-40 sm:h-44 p-3 sm:p-4 bg-clean-white border-l-4 border-l-hubspot-orange group-hover:border-l-growth-teal transition-all duration-300 relative overflow-hidden">
                     
                     {/* Header with issuer logo only */}
                     <div className="flex items-center mb-3">

@@ -11,7 +11,9 @@ const Skills = lazy(() => import("@/components/Skills"));
 const About = lazy(() => import("@/components/About"));
 const Portfolio = lazy(() => import("@/components/Portfolio"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
+const AccentQuote = lazy(() => import("@/components/AccentQuote"));
 const StrategyCallCTA = lazy(() => import("@/components/StrategyCallCTA"));
+const StickyMobileCTA = lazy(() => import("@/components/StickyMobileCTA"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const Index = () => {
@@ -52,6 +54,8 @@ const Index = () => {
         <Suspense fallback={<div className="h-48 bg-gray-100 animate-pulse" />}>
           <Footer />
         </Suspense>
+        
+        <StickyMobileCTA />
       </div>
     </ErrorBoundary>
   );

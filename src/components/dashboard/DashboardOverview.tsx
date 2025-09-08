@@ -88,16 +88,49 @@ const DashboardOverview = () => {
       </div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-poppins text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-professional-navy font-normal text-3xl">Ignore my accent</span>
-            <br />
-            <span className="text-hubspot-orange font-extrabold text-5xl">Let the KPIs talk.</span>
-          </h2>
-          <p className="font-inter text-xl text-professional-navy max-w-3xl mx-auto">
-            Real results from strategic campaigns and growth initiatives across multiple industries
-          </p>
+          <div className="mb-8">
+            <div className="w-16 h-16 mx-auto mb-6">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-hubspot-orange/5 to-hubspot-orange/10 flex items-center justify-center shadow-sm">
+                <svg 
+                  viewBox="0 0 24 24" 
+                  className="w-10 h-10"
+                  fill="none"
+                >
+                  <defs>
+                    <linearGradient id="quoteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#ff6b35" />
+                      <stop offset="100%" stopColor="#ff8c42" />
+                    </linearGradient>
+                  </defs>
+                  <path 
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" 
+                    fill="url(#quoteGradient)"
+                    stroke="url(#quoteGradient)"
+                    strokeWidth="0.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <blockquote className="max-w-4xl mx-auto mb-6 leading-tight">
+              <div className="text-lg md:text-xl text-gray-600 font-medium">
+                "Ignore my accent,
+              </div>
+              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient bg-gradient-to-r from-hubspot-orange to-hubspot-orange/80 bg-clip-text text-transparent">
+                let the KPIs talk."
+              </div>
+            </blockquote>
+          </div>
         </div>
 
+        {/* Metrics Header */}
+        <div className="text-center mb-8">
+          <h3 className="text-2xl md:text-3xl font-bold text-professional-navy mb-2">
+            12+ Years of Proven Results
+          </h3>
+          <p className="text-lg text-blue-gray">
+            Cumulative metrics from strategic campaigns and growth initiatives
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-hubspot-md mb-hubspot-lg">
           {metrics.map((metric, index) => <MetricCard key={index} title={metric.title} value={metric.value} suffix={metric.suffix} decimals={metric.decimals} icon={metric.icon} className={`animate-slide-up ${metric.color}`} style={{

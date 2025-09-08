@@ -147,7 +147,7 @@ const Testimonials = () => {
       length: 5
     }).map((_, index) => <Star key={index} className={`w-4 h-4 ${index < rating ? "text-yellow-400 fill-current" : "text-gray-300"}`} />);
   };
-  return <section id="testimonials" className="py-hubspot-xl bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+  return <section id="testimonials" className="section-spacing bg-pattern-dark text-white relative overflow-hidden">
       {/* Abstract Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-3xl"></div>
@@ -174,14 +174,14 @@ const Testimonials = () => {
           <div className="max-w-3xl mx-auto">
             <p className="text-white/90 leading-relaxed backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 font-light text-lg">
               Real results from real clients. See how data-driven marketing strategies 
-              have transformed businesses across industries.
+              have transformed businesses across industries since 2013.
             </p>
           </div>
         </div>
 
         {/* Client Testimonials Single Row with Navigation */}
         <motion.div 
-          className="flex items-center gap-6 mb-hubspot-xl"
+          className="flex items-center gap-4 md:gap-6 mb-hubspot-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -207,8 +207,8 @@ const Testimonials = () => {
               {/* Shimmer Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-300"></div>
               {/* Icon */}
-              <div className="relative p-4">
-                <ChevronLeft className="w-6 h-6 text-white group-hover:text-hubspot-orange transition-colors duration-300" />
+              <div className="relative p-3 md:p-4">
+                <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white group-hover:text-hubspot-orange transition-colors duration-300" />
               </div>
             </div>
           </motion.button>
@@ -227,7 +227,7 @@ const Testimonials = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="flex gap-6 w-max py-8">
+            <div className="flex gap-4 md:gap-6 w-max py-4 md:py-8">
             <AnimatePresence>
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <motion.div
@@ -254,8 +254,8 @@ const Testimonials = () => {
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Card className="bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 group flex-shrink-0 w-80 shadow-2xl hover:shadow-lg" style={{
-            marginTop: `${index % 3 * 8}px`
+                <Card className="bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 group flex-shrink-0 w-72 sm:w-80 shadow-2xl hover:shadow-lg" style={{
+            marginTop: `${index % 3 * 4}px`
           }}>
               <CardHeader>
                 <div className="flex items-center gap-hubspot-sm">
@@ -323,8 +323,8 @@ const Testimonials = () => {
               {/* Shimmer Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-300"></div>
               {/* Icon */}
-              <div className="relative p-4">
-                <ChevronRight className="w-6 h-6 text-white group-hover:text-hubspot-orange transition-colors duration-300" />
+              <div className="relative p-3 md:p-4">
+                <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white group-hover:text-hubspot-orange transition-colors duration-300" />
               </div>
             </div>
           </motion.button>

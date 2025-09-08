@@ -72,8 +72,8 @@ const NewsletterSignup = () => {
           
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="w-full justify-center text-lg py-3 border-growth-teal text-growth-teal hover:bg-growth-teal hover:text-white">
-                <Target className="mr-2 h-5 w-5 animate-pulse" />
+              <Button variant="outline" className="w-full justify-center text-xl font-bold py-4 border-2 border-hubspot-orange text-hubspot-orange hover:bg-hubspot-orange hover:text-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <Target className="mr-2 h-6 w-6 animate-pulse" />
                 Book A Growth Strategy Call
               </Button>
             </DialogTrigger>

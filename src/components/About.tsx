@@ -10,7 +10,7 @@ const About = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="timeline" className="py-hubspot-xl bg-gradient-to-br from-white via-slate-50 to-blue-50 relative overflow-hidden">
+    <section id="timeline" className="section-spacing bg-pattern-accent relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 -left-20 w-64 h-64 bg-gradient-to-br from-hubspot-blue/10 to-transparent rounded-full blur-2xl"></div>
@@ -20,10 +20,10 @@ const About = () => {
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-hubspot-xl">
-          <h2 className="text-hubspot-h1 mb-hubspot-md text-2xl sm:text-3xl lg:text-4xl text-professional-navy">
+          <h2 className="text-h2 mb-6 text-professional-navy">
             My Professional <span className="text-gradient">Journey</span>
           </h2>
-          <p className="text-hubspot-body max-w-3xl mx-auto text-sm sm:text-base text-blue-gray">
+          <p className="text-body max-w-3xl mx-auto text-blue-gray">
             Complete marketing professional profile with interactive timeline, certifications, and performance metrics
           </p>
         </div>

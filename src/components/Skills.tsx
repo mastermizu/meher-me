@@ -8,7 +8,7 @@ const Skills = () => {
   const coreServices = [{
     id: "demand-gen",
     title: "Demand Generation",
-    description: "End-to-end demand generation campaigns that drive qualified pipeline",
+    description: "Qualified prospects delivered to your sales team daily",
     icon: <TrendingUp className="w-8 h-8" />,
     accentColor: "border-l-hubspot-orange",
     bgColor: "bg-gradient-to-br from-hubspot-orange/5 to-hubspot-orange/10",
@@ -30,7 +30,7 @@ const Skills = () => {
   }, {
     id: "growth-marketing",
     title: "Growth Marketing",
-    description: "Data-driven growth strategies and optimization across all channels",
+    description: "Clear insights that turn data into profitable decisions",
     icon: <BarChart3 className="w-8 h-8" />,
     accentColor: "border-l-growth-teal",
     bgColor: "bg-gradient-to-br from-growth-teal/5 to-growth-teal/10",
@@ -50,7 +50,7 @@ const Skills = () => {
   }, {
     id: "email-lifecycle",
     title: "Email Marketing",
-    description: "Advanced automation sequences and marketing campaign management",
+    description: "Streamlined workflows that close more deals automatically",
     icon: <Mail className="w-8 h-8" />,
     accentColor: "border-l-hubspot-orange",
     bgColor: "bg-gradient-to-br from-hubspot-orange/5 to-hubspot-orange/10",
@@ -69,8 +69,8 @@ const Skills = () => {
     }]
   }, {
     id: "abm-campaigns",
-    title: "Account-Based Marketing",
-    description: "Strategic account targeting and personalized engagement campaigns",
+    title: "A-B-M",
+    description: "Personalized engagement that converts high-value accounts",
     icon: <Target className="w-8 h-8" />,
     accentColor: "border-l-hubspot-blue",
     bgColor: "bg-gradient-to-br from-hubspot-blue/5 to-hubspot-blue/10",
@@ -89,8 +89,8 @@ const Skills = () => {
     }]
   }, {
     id: "campaign-management",
-    title: "Campaign Management",
-    description: "Multi-channel campaign orchestration and performance optimization",
+    title: "360° Campaigns",
+    description: "Integrated campaigns that maximize ROI across all touchpoints",
     icon: <BarChart3 className="w-8 h-8" />,
     accentColor: "border-l-growth-teal",
     bgColor: "bg-gradient-to-br from-growth-teal/5 to-growth-teal/10",
@@ -110,7 +110,7 @@ const Skills = () => {
   }, {
     id: "lifecycle-marketing",
     title: "Lifecycle Marketing",
-    description: "Customer journey optimization and retention strategies",
+    description: "Proven strategies that increase customer lifetime value",
     icon: <TrendingUp className="w-8 h-8" />,
     accentColor: "border-l-hubspot-orange",
     bgColor: "bg-gradient-to-br from-hubspot-orange/5 to-hubspot-orange/10",
@@ -130,7 +130,7 @@ const Skills = () => {
   }, {
     id: "lead-generation",
     title: "Lead Generation",
-    description: "Multi-channel lead capture and qualification strategies",
+    description: "High-quality leads that convert into paying customers",
     icon: <CheckCircle className="w-8 h-8" />,
     accentColor: "border-l-hubspot-blue",
     bgColor: "bg-gradient-to-br from-hubspot-blue/5 to-hubspot-blue/10",
@@ -148,7 +148,7 @@ const Skills = () => {
       description: "Conversion"
     }]
   }];
-  return <section id="skills" className="py-hubspot-xl bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+  return <section id="skills" className="section-spacing bg-pattern-light relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-hubspot-orange/10 to-transparent rounded-full blur-3xl"></div>
@@ -158,11 +158,11 @@ const Skills = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-hubspot-xl">
-          <h2 className="text-hubspot-h1 mb-hubspot-md text-professional-navy">
+          <h2 className="text-h2 mb-6 text-professional-navy">
             Core <span className="text-gradient">Expertise</span>
           </h2>
-          <p className="text-hubspot-body max-w-3xl mx-auto text-blue-gray">
-            Demand Generation, Growth Marketing, ABM, Email Marketing, Campaign Management, Lifecycle Marketing & Lead Generation
+          <p className="text-body max-w-3xl mx-auto text-blue-gray">
+            Demand Generation, Growth Marketing, A-B-M, Email Marketing, 360° Campaigns, Lifecycle Marketing & Lead Generation
           </p>
           
           {/* 2025 Performance Status Bar */}
@@ -347,7 +347,7 @@ const Skills = () => {
               </CardContent>
             </Card>
 
-            {/* Account-Based Marketing (ABM) */}
+            {/* A-B-M (Account-Based Marketing) */}
             <Card className={`hubspot-card hubspot-card-hover ${coreServices[3].accentColor} ${coreServices[3].bgColor}`}>
               <CardHeader>
                 <div className="flex items-center gap-hubspot-sm">
@@ -379,7 +379,7 @@ const Skills = () => {
           {/* Row 3: 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-hubspot-lg">
             
-            {/* Campaign Management */}
+            {/* 360° Campaigns */}
             <Card className={`hubspot-card hubspot-card-hover ${coreServices[4].accentColor} ${coreServices[4].bgColor}`}>
               <CardHeader>
                 <div className="flex items-center gap-hubspot-sm">
@@ -471,9 +471,10 @@ const Skills = () => {
           </p>
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="hubspot-button-primary text-lg">
-                Start Growth Strategy
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button className="bg-gradient-to-r from-hubspot-orange to-hubspot-orange/90 hover:from-hubspot-orange/90 hover:to-hubspot-orange text-white text-xl font-bold px-8 py-4 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                <Target className="mr-2 h-5 w-5" />
+                Book Growth Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-4xl">
