@@ -16,6 +16,7 @@ interface StarActivity {
   opacity: number;
   scale: number;
   animationPhase: 'appearing' | 'visible' | 'fading';
+  zone: number;
 }
 
 const fallbackActivities: Activity[] = [
@@ -32,6 +33,7 @@ const fallbackActivities: Activity[] = [
 const RandomActivities = () => {
   const [allActivities, setAllActivities] = useState<Activity[]>([]);
   const [stars, setStars] = useState<StarActivity[]>([]);
+  const [usedZones, setUsedZones] = useState<number[]>([]);
 
   // Fetch activities from database
   useEffect(() => {
@@ -62,7 +64,7 @@ const RandomActivities = () => {
   }, []);
 
   // Create scattered positions around the headshot card (word cloud style)
-  const generatePosition = () => {
+  const generatePosition = (preferredZone?: number) => {
     const positions = [
       // Left side - closer to headshot card
       { minX: 0, maxX: 15, minY: 0, maxY: 100 },
@@ -89,10 +91,34 @@ const RandomActivities = () => {
       { minX: 72, maxX: 100, minY: 15, maxY: 85 },
     ];
     
-    const zone = positions[Math.floor(Math.random() * positions.length)];
+    // Choose zone intelligently to prevent clustering
+    let selectedZone: number;
+    if (preferredZone !== undefined) {
+      selectedZone = preferredZone;
+    } else {
+      // Find least used zones first
+      const zoneCounts = new Array(positions.length).fill(0);
+      stars.forEach(star => {
+        if (star.zone < positions.length) {
+          zoneCounts[star.zone]++;
+        }
+      });
+      
+      const minCount = Math.min(...zoneCounts);
+      const availableZones = zoneCounts.map((count, index) => ({ index, count }))
+        .filter(zone => zone.count === minCount)
+        .map(zone => zone.index);
+      
+      selectedZone = availableZones[Math.floor(Math.random() * availableZones.length)];
+    }
+    
+    const zone = positions[selectedZone];
     return {
-      x: Math.random() * (zone.maxX - zone.minX) + zone.minX,
-      y: Math.random() * (zone.maxY - zone.minY) + zone.minY
+      position: {
+        x: Math.random() * (zone.maxX - zone.minX) + zone.minX,
+        y: Math.random() * (zone.maxY - zone.minY) + zone.minY
+      },
+      zoneIndex: selectedZone
     };
   };
 
@@ -101,7 +127,7 @@ const RandomActivities = () => {
     if (allActivities.length === 0) return null;
     
     const activity = allActivities[Math.floor(Math.random() * allActivities.length)];
-    const position = generatePosition();
+    const { position, zoneIndex } = generatePosition();
     
     return {
       id: `star-${Date.now()}-${Math.random()}`,
@@ -110,7 +136,8 @@ const RandomActivities = () => {
       rotation: Math.random() * 30 - 15,
       opacity: 0,
       scale: 0.8,
-      animationPhase: 'appearing' as const
+      animationPhase: 'appearing' as const,
+      zone: zoneIndex
     };
   };
 
