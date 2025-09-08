@@ -67,26 +67,26 @@ const RandomActivities = () => {
       // Left side - closer to headshot card
       { minX: 0, maxX: 15, minY: 0, maxY: 100 },
       
-      // Right side - closer to headshot card
-      { minX: 85, maxX: 100, minY: 0, maxY: 100 },
+      // Right side - closer to headshot card (balanced with left)
+      { minX: 75, maxX: 100, minY: 0, maxY: 100 },
       
       // Top left corner - avoid center
       { minX: 0, maxX: 20, minY: 0, maxY: 15 },
       
-      // Top right corner - avoid center
-      { minX: 80, maxX: 100, minY: 0, maxY: 15 },
+      // Top right corner - avoid center (balanced with left)
+      { minX: 70, maxX: 100, minY: 0, maxY: 15 },
       
       // Bottom left corner - avoid center
       { minX: 0, maxX: 20, minY: 85, maxY: 100 },
       
-      // Bottom right corner - avoid center
-      { minX: 80, maxX: 100, minY: 85, maxY: 100 },
+      // Bottom right corner - avoid center (balanced with left)
+      { minX: 70, maxX: 100, minY: 85, maxY: 100 },
 
       // Mid-left zone - closer to headshot
       { minX: 0, maxX: 18, minY: 15, maxY: 85 },
 
-      // Mid-right zone - closer to headshot
-      { minX: 82, maxX: 100, minY: 15, maxY: 85 },
+      // Mid-right zone - closer to headshot (balanced with left)
+      { minX: 72, maxX: 100, minY: 15, maxY: 85 },
     ];
     
     const zone = positions[Math.floor(Math.random() * positions.length)];
