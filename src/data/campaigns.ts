@@ -64,14 +64,14 @@ export const campaigns: Campaign[] = [
     status: "Completed",
     ctr: "12.3%",
     roas: "6.2x",
-    conversions: "1,234",
+    conversions: "847",
     revenue: "$156K",
     goalProgress: 128,
     description: "Comprehensive inbound marketing strategy that generated high-quality leads through content marketing and automation workflows.",
     metrics: [
       {
         label: "Lead Generation",
-        value: "1,234",
+        value: "847",
         target: "800",
         status: "exceeding"
       },
@@ -109,8 +109,8 @@ export const campaigns: Campaign[] = [
     status: "In Progress",
     ctr: "6.8%",
     roas: "3.9x",
-    conversions: "456",
-    revenue: "$89K",
+    conversions: "89",
+    revenue: "$1.2M",
     goalProgress: 78,
     description: "Enterprise-level sales enablement and CRM optimization that improved sales team efficiency and deal closure rates.",
     metrics: [
@@ -128,8 +128,8 @@ export const campaigns: Campaign[] = [
       },
       {
         label: "Average Deal Size",
-        value: "$195K",
-        target: "$150K",
+        value: "$13.5K",
+        target: "$10K",
         status: "exceeding"
       },
       {
@@ -154,7 +154,7 @@ export const campaigns: Campaign[] = [
     status: "Completed",
     ctr: "9.2%",
     roas: "5.1x",
-    conversions: "3,456",
+    conversions: "1,892",
     revenue: "$234K",
     goalProgress: 156,
     description: "Social media advertising campaign that built brand awareness and drove user acquisition across multiple platforms.",
@@ -167,7 +167,7 @@ export const campaigns: Campaign[] = [
       },
       {
         label: "Follower Growth",
-        value: "+45K",
+        value: "+28.7K",
         target: "+25K",
         status: "exceeding"
       },
@@ -199,7 +199,7 @@ export const campaigns: Campaign[] = [
     status: "Completed",
     ctr: "24.7%",
     roas: "7.3x",
-    conversions: "5,678",
+    conversions: "3,247",
     revenue: "$445K",
     goalProgress: 189,
     description: "Automated email marketing sequences that nurtured leads and drove repeat purchases through personalized campaigns.",
@@ -244,14 +244,14 @@ export const campaigns: Campaign[] = [
     status: "In Progress",
     ctr: "15.6%",
     roas: "4.2x",
-    conversions: "2,345",
+    conversions: "1,156",
     revenue: "$178K",
     goalProgress: 92,
     description: "Strategic influencer partnerships that expanded brand reach and drove authentic engagement with target demographics.",
     metrics: [
       {
         label: "Reach",
-        value: "2.3M",
+        value: "1.8M",
         target: "1.5M",
         status: "exceeding"
       },
