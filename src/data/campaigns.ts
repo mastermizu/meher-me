@@ -153,7 +153,7 @@ export const campaigns: Campaign[] = [
     industry: "SaaS",
     status: "Completed",
     ctr: "9.2%",
-    roas: "5.1x",
+    roas: "4.1x",
     conversions: "1,892",
     revenue: "$264K",
     goalProgress: 156,
