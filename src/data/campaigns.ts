@@ -94,7 +94,7 @@ export const campaigns: Campaign[] = [
         status: "exceeding"
       }
     ],
-    tags: ["HubSpot", "Content Marketing", "Automation"],
+    tags: ["HubSpot", "Zapier", "Content Marketing", "Automation"],
     duration: "8 months",
     client: "SaaS Company",
     icon: Target,
@@ -104,7 +104,7 @@ export const campaigns: Campaign[] = [
   {
     id: 3,
     name: "Enterprise Sales",
-    platform: "Salesforce",
+    platform: "HubSpot",
     industry: "Enterprise",
     status: "In Progress",
     ctr: "6.8%",
@@ -139,7 +139,7 @@ export const campaigns: Campaign[] = [
         status: "exceeding"
       }
     ],
-    tags: ["Salesforce", "Sales Enablement", "CRM"],
+    tags: ["HubSpot", "Sales Enablement", "CRM"],
     duration: "4 months",
     client: "Enterprise Corp",
     icon: BarChart3,
