@@ -108,7 +108,7 @@ export const campaigns: Campaign[] = [
     industry: "Enterprise",
     status: "In Progress",
     ctr: "6.8%",
-    roas: "3.9x",
+    roas: "13.2x",
     conversions: "89",
     revenue: "$1.2M",
     goalProgress: 78,
@@ -155,7 +155,7 @@ export const campaigns: Campaign[] = [
     ctr: "9.2%",
     roas: "5.1x",
     conversions: "1,892",
-    revenue: "$234K",
+    revenue: "$264K",
     goalProgress: 156,
     description: "Social media advertising campaign that built brand awareness and drove user acquisition across multiple platforms.",
     metrics: [
