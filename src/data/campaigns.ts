@@ -65,7 +65,7 @@ export const campaigns: Campaign[] = [
     ctr: "12.3%",
     roas: "6.2x",
     conversions: "847",
-    revenue: "$156K",
+    revenue: "$2.3M",
     goalProgress: 128,
     description: "Comprehensive inbound marketing strategy that generated high-quality leads through content marketing and automation workflows.",
     metrics: [
