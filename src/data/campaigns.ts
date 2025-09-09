@@ -194,7 +194,7 @@ export const campaigns: Campaign[] = [
   {
     id: 5,
     name: "Email Marketing",
-    platform: "Mailchimp",
+    platform: "Klaviyo",
     industry: "E-commerce",
     status: "Completed",
     ctr: "24.7%",
@@ -229,7 +229,7 @@ export const campaigns: Campaign[] = [
         status: "exceeding"
       }
     ],
-    tags: ["Mailchimp", "Email Automation", "Personalization"],
+    tags: ["Klaviyo", "Email Automation", "Personalization"],
     duration: "7 months",
     client: "Online Retailer",
     icon: Mail,
