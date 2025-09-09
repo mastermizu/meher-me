@@ -20,7 +20,7 @@ export const campaigns: Campaign[] = [
     ctr: "8.7%",
     roas: "4.8x",
     conversions: "2,847",
-    revenue: "$287K",
+    revenue: "$398K",
     goalProgress: 142,
     description: "Multi-channel paid advertising strategy that exceeded revenue targets through strategic audience targeting and conversion optimization.",
     metrics: [
@@ -198,7 +198,7 @@ export const campaigns: Campaign[] = [
     industry: "E-commerce",
     status: "Completed",
     ctr: "24.7%",
-    roas: "7.3x",
+    roas: "87.3x",
     conversions: "3,247",
     revenue: "$445K",
     goalProgress: 189,
