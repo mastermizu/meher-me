@@ -197,7 +197,7 @@ export const campaigns: Campaign[] = [
     platform: "Klaviyo",
     industry: "E-commerce",
     status: "Completed",
-    ctr: "24.7%",
+    ctr: "2.7%",
     roas: "87.3x",
     conversions: "3,247",
     revenue: "$445K",
@@ -206,14 +206,14 @@ export const campaigns: Campaign[] = [
     metrics: [
       {
         label: "Open Rate",
-        value: "24.7%",
+        value: "28.4%",
         target: "18.0%",
         status: "exceeding"
       },
       {
         label: "Click Rate",
-        value: "8.9%",
-        target: "5.0%",
+        value: "2.7%",
+        target: "2.0%",
         status: "exceeding"
       },
       {
