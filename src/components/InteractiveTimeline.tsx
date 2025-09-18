@@ -262,8 +262,10 @@ const InteractiveTimeline = () => {
     return visibleExps.sort((a, b) => b.startYear - a.startYear);
   }, [activeExperience, experiences, selectedYear]);
 
-  // Calculate progress percentage for handle position - plane moves from top (2010) to bottom (2024)
-  const progressPercentage = ((selectedYear - minYear) / (maxYear - minYear)) * 100;
+  // Calculate progress percentage for handle position - plane moves from top (2010) to bottom (2025)
+  // Use the year index in the array for more accurate positioning
+  const yearIndex = allYears.indexOf(selectedYear);
+  const progressPercentage = (yearIndex / (allYears.length - 1)) * 100;
 
   return (
     <div className="w-full">
@@ -328,19 +330,27 @@ const InteractiveTimeline = () => {
               
               {/* Year markers - Right side */}
               <div className="ml-4 relative h-full flex flex-col justify-between py-2">
-                {allYears.map((year) => (
-                  <button
-                    key={year}
-                    onClick={() => setSelectedYear(year)}
-                    className={`text-sm transition-all duration-300 cursor-pointer px-2 py-1 rounded whitespace-nowrap ${
-                      year === selectedYear
-                        ? 'text-hubspot-orange font-bold bg-hubspot-orange/20 scale-110 shadow-md'
-                        : 'text-blue-gray hover:text-professional-navy hover:bg-hubspot-orange/5'
-                    }`}
-                  >
-                    {year}
-                  </button>
-                ))}
+                {allYears.map((year, index) => {
+                  // Calculate the exact position percentage for each year to match handle positioning
+                  const yearPercentage = (index / (allYears.length - 1)) * 100;
+                  return (
+                    <button
+                      key={year}
+                      onClick={() => setSelectedYear(year)}
+                      className={`text-sm transition-all duration-300 cursor-pointer px-2 py-1 rounded whitespace-nowrap absolute ${
+                        year === selectedYear
+                          ? 'text-hubspot-orange font-bold bg-hubspot-orange/20 scale-110 shadow-md'
+                          : 'text-blue-gray hover:text-professional-navy hover:bg-hubspot-orange/5'
+                      }`}
+                      style={{
+                        top: `${yearPercentage}%`,
+                        transform: 'translateY(-50%)'
+                      }}
+                    >
+                      {year}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
