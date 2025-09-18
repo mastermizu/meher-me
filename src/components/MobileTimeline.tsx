@@ -27,7 +27,7 @@ const MobileTimeline = () => {
       role: "Marketing Automation Lead",
       company: "INFRONT MARKETING",
       description: "Developed and executed multi-channel marketing campaigns aligned with client growth objectives, improving retention and upsell rates for 15+ B2B clients.",
-      achievements: ["• Collaborated with sales and creative teams to optimize campaign effectiveness and identify new revenue opportunities", "• Managed campaign budgets, project timelines, and reporting frameworks to ensure operational excellence and timely delivery", "• Mentored and coached junior marketers, fostering a collaborative and high-performing team environment"],
+      achievements: ["Collaborated with sales and creative teams to optimize campaign effectiveness and identify new revenue opportunities", "Managed campaign budgets, project timelines, and reporting frameworks to ensure operational excellence and timely delivery", "Mentored and coached junior marketers, fostering a collaborative and high-performing team environment"],
       startYear: 2024,
       endYear: 2024
     },
@@ -36,7 +36,7 @@ const MobileTimeline = () => {
       role: "Digital Marketing Strategist",
       company: "ADVANCED ORTHOMOLECULAR RESEARCH",
       description: "Led customer marketing initiatives, reporting directly to the CMO and collaborating with executive leadership.",
-      achievements: ["• Designed lifecycle programs that boosted customer lifetime value by 20% and reduced churn", "• Built measurement systems that connected marketing efforts to $1.2M in annual revenue growth", "• Developed cross-channel strategies and customer segmentation models based on data insights"],
+      achievements: ["Designed lifecycle programs that boosted customer lifetime value by 20% and reduced churn", "Built measurement systems that connected marketing efforts to $1.2M in annual revenue growth", "Developed cross-channel strategies and customer segmentation models based on data insights"],
       startYear: 2023,
       endYear: 2024
     },
@@ -45,7 +45,7 @@ const MobileTimeline = () => {
       role: "Digital Marketing Manager",
       company: "BLACK PRESS MEDIA GROUP",
       description: "Managed and executed digital marketing projects for numerous crown corporations and public sector clients, including the Canadian Armed Forces, BC Corrections, City of Surrey, City of Langley, City of Prince Rupert, BCLC, as well as non-profits, NGOs, and First Nations organizations.",
-      achievements: ["• Oversaw campaign budgets up to $2 million, delivering sponsored digital ads, newspaper publications, and media buying to raise public awareness, recruit new employees, and foster community building", "• Designed and led targeted, culturally responsive campaigns for government-funded projects, increasing engagement and driving measurable results for diverse communities", "• Built strong relationships with internal teams and external partners, ensuring campaign alignment, compliance, and success"],
+      achievements: ["Oversaw campaign budgets up to $2 million, delivering sponsored digital ads, newspaper publications, and media buying to raise public awareness, recruit new employees, and foster community building", "Designed and led targeted, culturally responsive campaigns for government-funded projects, increasing engagement and driving measurable results for diverse communities", "Built strong relationships with internal teams and external partners, ensuring campaign alignment, compliance, and success"],
       startYear: 2021,
       endYear: 2022
     },
@@ -63,7 +63,7 @@ const MobileTimeline = () => {
       role: "Post-Baccalaureate in Marketing",
       company: "THOMPSON RIVERS UNIVERSITY",
       description: "Advanced marketing education program focused on strategic marketing, digital marketing, and data analytics with direct application to demand generation.",
-      achievements: ["• Dean's Award Recipient - demonstrated excellence in marketing automation and lead nurturing strategies", "• Specialized in digital marketing analytics, conversion optimization, and customer acquisition funnels", "• Mastered data-driven marketing approaches essential for growth specialist roles"],
+      achievements: ["Dean's Award Recipient - demonstrated excellence in marketing automation and lead nurturing strategies", "Specialized in digital marketing analytics, conversion optimization, and customer acquisition funnels", "Mastered data-driven marketing approaches essential for growth specialist roles"],
       startYear: 2018,
       endYear: 2020
     },
@@ -72,7 +72,7 @@ const MobileTimeline = () => {
       role: "BBA – Marketing",
       company: "UNIVERSITY OF ASIA PACIFIC",
       description: "Comprehensive business foundation with marketing specialization, building core competencies in consumer psychology and strategic business development.",
-      achievements: ["• Developed analytical frameworks for market segmentation and customer lifecycle management", "• Built expertise in marketing research and data analysis critical for demand generation success", "• Established foundation in business strategy and growth marketing principles"],
+      achievements: ["Developed analytical frameworks for market segmentation and customer lifecycle management", "Built expertise in marketing research and data analysis critical for demand generation success", "Established foundation in business strategy and growth marketing principles"],
       startYear: 2009,
       endYear: 2013
     },
