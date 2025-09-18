@@ -86,15 +86,6 @@ const MobileTimeline = () => {
       endYear: 2020
     },
     {
-      year: "2016-2020",
-      role: "Digital Media Manager",
-      company: "EMR MEDIABUYING",
-      description: "Led performance marketing initiatives for a global affiliate network, generating multi-channel traffic and targeted leads for network partners. Scaled client revenues to seven digits through strategic media buying and optimization.",
-      achievements: ["Generated 7-digit lead-generation affiliate commissions through strategic campaign management", "Optimized media buying across trending channels including email, display, native, and push traffic", "Developed affiliate management programs and business development strategies for selective verticals"],
-      startYear: 2016,
-      endYear: 2020
-    },
-    {
       year: "2018-2020",
       role: "Post-Baccalaureate in Marketing",
       company: "THOMPSON RIVERS UNIVERSITY",
