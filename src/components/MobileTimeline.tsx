@@ -23,6 +23,15 @@ interface Experience {
 const MobileTimeline = () => {
   const experiences: Experience[] = [
     {
+      year: "2025-Present",
+      role: "Automation Lead",
+      company: "SYNTAXLAB",
+      description: "Business automation expert helping companies eliminate operational bottlenecks through AI-powered workflows. Transform manual processes into efficient systems using Make.com and N8N, enabling teams to focus on strategic growth while automation handles the rest.",
+      achievements: ["Specialized in creating custom tools that connect platforms and centralize data", "Delivered measurable ROI through practical, no-code automation solutions", "Eliminated operational bottlenecks for clients across diverse industries"],
+      startYear: 2025,
+      endYear: 2025
+    },
+    {
       year: "2024-Present",
       role: "Marketing Automation Lead",
       company: "INFRONT MARKETING",
@@ -30,6 +39,15 @@ const MobileTimeline = () => {
       achievements: ["Collaborated with sales and creative teams to optimize campaign effectiveness and identify new revenue opportunities", "Managed campaign budgets, project timelines, and reporting frameworks to ensure operational excellence and timely delivery", "Mentored and coached junior marketers, fostering a collaborative and high-performing team environment"],
       startYear: 2024,
       endYear: 2024
+    },
+    {
+      year: "2023-2025",
+      role: "Growth Marketing Strategist",
+      company: "MAYPLE",
+      description: "MailChimp Official Account Auditor, helping SMBs optimize their email marketing with actionable insights that improve results within 24 hours. Provided strategic consulting for email marketing optimization and automation.",
+      achievements: ["Optimized email deliverability and list hygiene for improved campaign performance", "Designed automated flows and lead capture funnels that increased conversion rates", "Implemented A/B testing frameworks and CRM integrations for data-driven decision making"],
+      startYear: 2023,
+      endYear: 2025
     },
     {
       year: "2023-Present",
@@ -50,12 +68,30 @@ const MobileTimeline = () => {
       endYear: 2022
     },
     {
+      year: "2021",
+      role: "Digital Marketing Specialist",
+      company: "SWITCHBOARD",
+      description: "Drove digital marketing strategy for a fully integrated fleet management solution serving 2000+ North American long-haul companies to streamline operations and maximize revenues.",
+      achievements: ["Developed comprehensive content marketing strategy focused on SEO optimization", "Managed multi-channel social and search ad campaigns with landing page optimization", "Built attribution models to calculate CPL and CAC across all marketing channels"],
+      startYear: 2021,
+      endYear: 2021
+    },
+    {
       year: "2020",
       role: "Email Marketing Engineer", 
       company: "Roomvu Inc",
       description: "Optimize and maintain custom email servers to handle 5 million/month of email outreach while maintaining multiple sender accounts using AWS SES",
       achievements: ["Handled 5M+ emails monthly", "Managed multiple sender accounts", "Optimized AWS SES infrastructure"],
       startYear: 2020,
+      endYear: 2020
+    },
+    {
+      year: "2016-2020",
+      role: "Digital Media Manager",
+      company: "EMR MEDIABUYING",
+      description: "Led performance marketing initiatives for a global affiliate network, generating multi-channel traffic and targeted leads for network partners. Scaled client revenues to seven digits through strategic media buying and optimization.",
+      achievements: ["Generated 7-digit lead-generation affiliate commissions through strategic campaign management", "Optimized media buying across trending channels including email, display, native, and push traffic", "Developed affiliate management programs and business development strategies for selective verticals"],
+      startYear: 2016,
       endYear: 2020
     },
     {
@@ -66,6 +102,33 @@ const MobileTimeline = () => {
       achievements: ["Dean's Award Recipient - demonstrated excellence in marketing automation and lead nurturing strategies", "Specialized in digital marketing analytics, conversion optimization, and customer acquisition funnels", "Mastered data-driven marketing approaches essential for growth specialist roles"],
       startYear: 2018,
       endYear: 2020
+    },
+    {
+      year: "2017-2018",
+      role: "Founding Partner",
+      company: "BEZEL MEDIA LLC",
+      description: "Co-founded result-oriented affiliate network connecting high-performing affiliates with premium advertisers. Built sustainable revenue models focused on long-term partnerships and quality over quick profits.",
+      achievements: ["Established strategic partnerships between top-tier affiliates and advertisers", "Developed performance-based marketing frameworks with focus on sustainable growth", "Created quality assurance protocols that enhanced partner relationships and network reputation"],
+      startYear: 2017,
+      endYear: 2018
+    },
+    {
+      year: "2015-2016",
+      role: "Chief Operating Officer",
+      company: "ZELLION INTERACTIVE",
+      description: "Led operations for boutique digital advertising agency focused on 'Smartness in Innovation and Action.' Delivered comprehensive digital solutions while building long-term client relationships and spectacular buying experiences.",
+      achievements: ["Managed end-to-end PPC advertising campaigns with measurable ROI improvements", "Oversaw web development, graphics, and social media management for diverse client portfolio", "Implemented email marketing strategies that enhanced customer engagement and retention"],
+      startYear: 2015,
+      endYear: 2016
+    },
+    {
+      year: "2012-2014",
+      role: "Affiliate Manager",
+      company: "ERA NETWORK CORP",
+      description: "Managed affiliate marketing operations for CPAera, an industry-transforming network focused on performance marketing and lead generation. Coordinated relationships between hundreds of advertisers and thousands of publishers.",
+      achievements: ["Built and maintained relationships with high-volume affiliate partners", "Optimized performance marketing campaigns for maximum lead generation efficiency", "Developed publisher recruitment and retention strategies that expanded network reach"],
+      startYear: 2012,
+      endYear: 2014
     },
     {
       year: "2009-2013",
