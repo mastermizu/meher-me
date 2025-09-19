@@ -141,6 +141,18 @@ const Testimonials = () => {
     name: "Vibrant Emotional Health",
     logo: "/lovable-uploads/cebac4ed-ba08-4456-959a-e519862ffac0.png",
     industry: "Social Services"
+  }, {
+    name: "BC Liquor Distribution Branch",
+    logo: "/lovable-uploads/british-columbia-logo.png",
+    industry: "Government"
+  }, {
+    name: "Discovery Community College",
+    logo: "/lovable-uploads/discovery-college-logo.png",
+    industry: "Education"
+  }, {
+    name: "Bayshore HealthCare",
+    logo: "/lovable-uploads/bayshore-healthcare-logo.png",
+    industry: "Healthcare"
   }];
   const renderStars = (rating: number) => {
     return Array.from({
@@ -268,7 +280,6 @@ const Testimonials = () => {
                       {testimonial.verified && <CheckCircle className="w-4 h-4 text-green-600" />}
                     </h4>
                     <p className="text-gray-600 text-sm">{testimonial.role}</p>
-                    <p className="text-hubspot-orange text-sm font-medium">{testimonial.company}</p>
                   </div>
                 </div>
               </CardHeader>
